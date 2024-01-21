@@ -41,8 +41,7 @@ const Status = styled(Typography)`
 `;
 
 const ChatHeader = ({ person }) => {  
-
-    const url = person.picture || defaultProfilePicture;
+    const url = person?.picture || defaultProfilePicture;
     
     const { activeUsers } = useContext(AccountContext);
 

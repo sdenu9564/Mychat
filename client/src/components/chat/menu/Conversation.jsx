@@ -42,7 +42,7 @@ const Text = styled(Typography)`
 `;
 
 const Conversation = ({ user }) => {
-    const url = user.picture || emptyProfilePicture;
+    const url = user?.picture || emptyProfilePicture;
     
     const { setPerson } = useContext(UserContext);
     const { account, newMessageFlag }  = useContext(AccountContext);

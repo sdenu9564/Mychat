@@ -45,7 +45,7 @@ const Profile = () => {
     return (
         <>
             <ImageContainer>
-                <Image src={account.picture} alt="displaypicture" />
+                <Image src={account?.picture} alt="displaypicture" />
             </ImageContainer>
             <BoxWrapper>
                 <Typography>Your name</Typography>
